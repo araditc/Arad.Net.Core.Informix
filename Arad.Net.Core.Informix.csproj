@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Arad.Net.Core.Informix</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Arad.Net.Core.Informix</Title>
+    <Authors>Ammar Heidari</Authors>
+    <Company>Arad ITC</Company>
+    <Description>Informix library for .NET Core</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Informix.Net.Core.OdbcMetaData.xml" />
+    <EmbeddedResource Include="Informix.Net.Core.OdbcMetaData.xml" LogicalName="Informix.Net.Core.OdbcMetaData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="8.0.0" />
+    <PackageReference Include="System.Security.Permissions" Version="8.0.0" />
+  </ItemGroup>
+</Project>
