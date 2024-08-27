@@ -13,15 +13,27 @@
     <Title>Arad.Net.Core.Informix</Title>
     <Authors>Ammar Heidari</Authors>
     <Company>Arad ITC</Company>
-    <Description>Informix library for .NET Core</Description>
+    <Description>Arad Informix database provider for .NET Core. This package contains all the necessary native libraries and resource files needed for connecting to an Informix database server.</Description>
+    <PackageProjectUrl>https://github.com/araditc/Arad.Net.Core.Informix</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/araditc/Arad.Net.Core.Informix</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Informix;Driver</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Informix.Net.Core.OdbcMetaData.xml" />
     <EmbeddedResource Include="Informix.Net.Core.OdbcMetaData.xml" LogicalName="Informix.Net.Core.OdbcMetaData.xml" />
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="8.0.0" />
     <PackageReference Include="System.Security.Permissions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
